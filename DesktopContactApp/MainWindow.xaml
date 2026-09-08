@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:DesktopContactApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+    <StackPanel>
+        <Button Content="Add Contact" Click="AddContactButton_Click" Margin="10"/>
+    </StackPanel>
 </Window>
