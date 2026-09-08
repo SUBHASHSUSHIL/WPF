@@ -17,7 +17,7 @@
                 Content="AC"
                 Grid.Row="1"/>
         <Button x:Name="negativeButton"
-                Style="{StaticResource additionalButtonsStyle}"
+                Style="{StaticResource additionalButtonsStyle }"
                 Content="+/-"
                 Grid.Row="1"
                 Grid.Column="1"/>
