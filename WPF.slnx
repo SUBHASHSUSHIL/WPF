@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="Calculator-.NET-Core-App/Calculator-.NET-Core-App.csproj" Id="81739224-e09d-4aab-96e5-4b80ce86562a" />
+  <Project Path="DesktopContactApp/DesktopContactApp.csproj" Id="7618c2b4-2db9-4fb2-a5ed-ce75a5401ffa" />
   <Project Path="Hello-world-.net-framework-app/Hello-world-.net-framework-app.csproj" Id="3d598dd9-0015-4829-a31c-f67c7048cbda" />
 </Solution>
