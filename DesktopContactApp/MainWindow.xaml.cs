@@ -19,12 +19,25 @@ namespace DesktopContactApp
         public MainWindow()
         {
             InitializeComponent();
+
+            ReadDatabase();
         }
 
         private void AddContactButton_Click(object sender, RoutedEventArgs e)
         {
             NewContactWindow newContactWindow = new NewContactWindow();
             newContactWindow.ShowDialog();
+
+            ReadDatabase();
+        }
+
+        void ReadDatabase()
+        {
+            using (SQLite.SQLiteConnection connection = new SQLite.SQLiteConnection(App.databasePath))
+            {
+                connection.CreateTable<Classes.Contact>();
+                var contacts = connection.Table<Classes.Contact>().ToList();
+            }
         }
     }
 }
