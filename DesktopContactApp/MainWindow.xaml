@@ -10,7 +10,18 @@
         <Button Content="New contact"
                 Click="AddContactButton_Click"/>
         <ListView x:Name="contactsListView"
-                  Margin="0 5 0 0"/>
+                  Height="250"
+                  Margin="0 5 0 0">
+            <ListView.ItemTemplate>
+            <DataTemplate>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="{Binding Name}" Margin="5" FontStyle="Italic"/>
+                    <TextBlock Text="{Binding Email}" Margin="5" Foreground="Blue"/>
+                    <TextBlock Text="{Binding Phone}" Margin="5"/>
+                </StackPanel>
+            </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </StackPanel>
 
 </Window>

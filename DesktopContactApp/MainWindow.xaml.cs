@@ -17,7 +17,6 @@ namespace DesktopContactApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        List<Contact> contacts;
 
         public MainWindow()
         {
@@ -36,6 +35,7 @@ namespace DesktopContactApp
 
         void ReadDatabase()
         {
+            List<Contact> contacts;
             using (SQLite.SQLiteConnection conn = new SQLite.SQLiteConnection(App.databasePath))
             {
                 conn.CreateTable<Contact>();
