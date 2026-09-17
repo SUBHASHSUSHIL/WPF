@@ -1,4 +1,5 @@
 ﻿using DesktopContactApp.Classes;
+using SQLite;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -38,7 +39,7 @@ namespace DesktopContactApp
 
         void ReadDatabase()
         {
-            using (SQLite.SQLiteConnection conn = new SQLite.SQLiteConnection(App.databasePath))
+            using (SQLiteConnection conn = new SQLiteConnection(App.databasePath))
             {
                 conn.CreateTable<Contact>();
                 contacts = conn.Table<Contact>().ToList().OrderBy(c => c.Name).ToList();
@@ -46,6 +47,14 @@ namespace DesktopContactApp
 
             if (contacts != null)
             {
+                //contactsListView.Items.Clear();
+                //foreach(var contact in contacts)
+                //{
+                //    contactsListView.Items.Add(new ListViewItem()
+                //    {
+                //        Content = contact
+                //    });
+                //}
                 contactsListView.ItemsSource = contacts;
             }
         }
