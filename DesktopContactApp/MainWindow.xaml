@@ -9,6 +9,9 @@
     <StackPanel Margin="10">
         <Button Content="New contact"
                 Click="AddContactButton_Click"/>
+        <TextBox x:Name="searchTextBox"
+                 Margin="0 5 0 0"
+                 TextChanged="SearchTextBox_TextChanged"/>
         <ListView x:Name="contactsListView"
                   Height="250"
                   Margin="0 5 0 0">
