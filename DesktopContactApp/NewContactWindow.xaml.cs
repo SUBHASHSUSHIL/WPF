@@ -22,15 +22,18 @@ namespace DesktopContactApp
         public NewContactWindow()
         {
             InitializeComponent();
+
+            Owner = Application.Current.MainWindow;
+            WindowStartupLocation = WindowStartupLocation.CenterOwner;
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
             Contact contact = new Contact()
             {
-                Name = NameTextBox.Text,
-                Email = EmailTextBox.Text,
-                Phone = PhoneTextBox.Text
+                Name = nameTextBox.Text,
+                Email = emailTextBox.Text,
+                Phone = phoneTextBox.Text
             };
 
             using (SQLiteConnection connection = new SQLiteConnection(App.databasePath))
