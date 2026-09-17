@@ -13,6 +13,7 @@
                  Margin="0 5 0 0"
                  TextChanged="SearchTextBox_TextChanged"/>
         <ListView x:Name="contactsListView"
+                  SelectionChanged="contactsListView_SelectionChanged"
                   Height="250"
                   Margin="0 5 0 0">
             <ListView.ItemTemplate>
