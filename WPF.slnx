@@ -1,5 +1,15 @@
 <Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="ARM" />
+    <Platform Name="ARM64" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
   <Project Path="Calculator-.NET-Core-App/Calculator-.NET-Core-App.csproj" Id="81739224-e09d-4aab-96e5-4b80ce86562a" />
   <Project Path="DesktopContactApp/DesktopContactApp.csproj" Id="7618c2b4-2db9-4fb2-a5ed-ce75a5401ffa" />
   <Project Path="Hello-world-.net-framework-app/Hello-world-.net-framework-app.csproj" Id="3d598dd9-0015-4829-a31c-f67c7048cbda" />
+  <Project Path="test-windows-application-packaging-project/test-windows-application-packaging-project.wapproj" Type="c7167f0d-bc9f-4e6e-afe1-012c56b48db5" Id="76af5f7a-b190-41ab-8ad4-66686d797fe8">
+    <Deploy />
+  </Project>
 </Solution>
