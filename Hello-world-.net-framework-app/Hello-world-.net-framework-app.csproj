@@ -90,7 +90,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="wpfDotnetFramework.md" />
+    <None Include="hello-world-dotnet-framework-app.md" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
